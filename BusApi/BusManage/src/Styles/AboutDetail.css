@@ -1,0 +1,197 @@
+.about-us-section {
+  width: 100%;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #f0f4ff, #e7d56e);
+  display: flex;
+  justify-content: center;
+}
+
+.about-us-wrapper {
+  max-width: 1300px;
+  width: 100%;
+}
+
+.intro-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.intro-text p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.about-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.about-card h3 {
+  font-size: 22px;
+  color: black;
+  margin-top: 15px;
+}
+
+.about-card p {
+  font-size: 17px;
+  color: #555;
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+.about-icon {
+  font-size: 50px;
+  color: black;
+  background: #f8f9ec;
+  border-radius: 10%;
+  padding: 18px;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro-text h1 {
+    font-size: 32px;
+  }
+
+  .about-icon {
+    font-size: 40px;
+    padding: 14px;
+  }
+}
+
+.learn-more-btn {
+  margin-top: 15px;
+  background-color: #e7d56e;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background-color: #00337f;
+}
+
+.extra-info {
+  margin-top: 15px;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.about-card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  width: 100%;
+  transition: transform 0.3s;
+  position: relative;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+}
+
+.about-card-details {
+  background: #ffffff;
+  padding: 25px;
+  border-left: 4px solid #e7d56e;
+  border-radius: 12px;
+  width: 100%;
+  animation: slideIn 0.4s ease forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.learn-more-btn {
+  margin-top: 15px;
+  background: #596b80;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #f1cb4e;
+  color: black;
+}
+
+
+
+.back-arrow1 {
+  position: absolute;
+  top: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #596b80;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: left 0.3s ease, background 0.3s ease;
+  z-index: 10;
+}
+
+/* Sidebar OPEN: place arrow just outside the sidebar (to the left of content) */
+.arrow-open {
+  left: 250px; /* Adjust this to be slightly less than the sidebar width */
+}
+
+/* Sidebar CLOSED: keep arrow at the left edge */
+.arrow-closed {
+  left: 10px;
+}
+
+.back-arrow1:hover {
+  background-color: #f1cb4e;
+  color: black;
+  transform: translateY(-3px);
+}
+
+
+
+
+

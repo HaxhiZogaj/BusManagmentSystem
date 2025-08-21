@@ -1,0 +1,154 @@
+.sidebar {
+  width: 250px;
+  background-color: #1e1e2f;
+  color: white;
+  transition: width 0.3s ease;
+  min-height: 100vh;
+  padding: 15px 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.sidebar.closed {
+  width: 70px;
+}
+
+.toggle-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.branding {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.search-bar {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #444;
+  margin: 10px 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  padding: 22px 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.menu-item:hover {
+  background-color: #2f2f44;
+}
+
+.menu-item .icon {
+  margin-right: 10px;
+  font-size: 2.0rem;
+}
+
+.separator {
+  margin-top: 20px;
+}
+
+.settings {
+  margin-top: 10px;
+}
+
+.dropdown {
+  margin-top: 8px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-item {
+  background: none;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 6px 0;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.dropdown-item:hover {
+  color: #aaa;
+}
+
+.dropdown-item.logout {
+  color: #ff4d4d;
+}
+
+.dropdown-item.logout:hover {
+  color: #ff1a1a;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.app-container:not(.sidebar-open) .main-content {
+  margin-left: 80px; /* shifts content right when sidebar closed */
+}
+
+.sidebar-open .main-content {
+  margin-left: 250px; /* shifts content right when sidebar open */
+}
+
+
+.user-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+  margin-top: auto;
+}
+
+.user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-greeting {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+

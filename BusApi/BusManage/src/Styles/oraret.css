@@ -1,0 +1,19 @@
+.control-pane{
+     background: linear-gradient(to right, #f0f4ff, #e7d56e);
+     min-height: 100vh; 
+       padding-top: 0;
+       padding-bottom: 0;
+       box-sizing: border-box; 
+       margin: 0;
+}
+
+.title{
+    color: black;
+}
+h2.title {
+  margin-top: 0; /* Remove the margin above the title */
+  text-align: center;
+  color: #333;
+}
+
+

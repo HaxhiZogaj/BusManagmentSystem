@@ -1,0 +1,50 @@
+/* 🧱 Global Reset — REMOVE ALL GAPS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #1e1e2f; 
+}
+
+ .main-content {
+  flex: 1;
+  transition: margin-left 0.3s ease;
+  height: 100vh;
+  width: 100%;
+  overflow-y: auto;
+  background-color: #1e1e2f;
+  padding: 0;
+} 
+
+
+
+.back-arrow {
+  position: absolute;
+  top: 10px;
+  left: 90px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #596b80;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+  z-index: 10;
+}
+
+.back-arrow:hover {
+  background-color: #f1cb4e;
+  color: black;
+  transform: translateY(-3px);
+}
+
+.arrow {
+  margin-right: 8px;
+  font-size: 20px;
+}
